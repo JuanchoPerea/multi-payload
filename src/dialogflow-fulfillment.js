@@ -278,6 +278,7 @@ class WebhookClient {
       this.responseMessages_.push(response);
     } else {
       throw new Error(`Unknown response type: "${JSON.stringify(response)}"`);
+    }
   }
 
   /**
