@@ -61,9 +61,11 @@ class Payload extends RichResponse {
     }
 
     if (!payload) {
+      console.log('platform', platform);
       this.platform = platform.platform;
       this.payload = JSON.parse(JSON.stringify(platform.payload));
     } else {
+      console.log('payload', payload);
       this.platform = platform;
       this.payload = JSON.parse(JSON.stringify(payload));
     }
